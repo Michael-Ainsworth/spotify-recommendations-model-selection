@@ -10,10 +10,20 @@ spotify_vizualization_feature_engineering.ipynb: This notebook loads in our init
 - Initial visualizations of the data
 - Feature engineering
 
-spotify_api_playlist_upload.ipynb: This notebook utilizes out cleaned dataset and performs the following:
+spotify_api_playlist_recommendations.ipynb: This notebook utilizes out cleaned dataset and performs the following:
 - Import custom playlists with the Spotify API
 - Create playlist vectors to summarize custom playlist
 - Use cleaned dataset to identify the most similar songs using cosine similarity
+
+spotify_model_improvements.ipynb: This notebook implements new techniques in an effort to improve and fine-tune predictions:
+- Generate decade specific categorical values
+- Provide weighting functions to offset song popularity and trends
+
+spotify_api_artist_genres.ipynb: Designs a side experiment with a sampled dataset to pull song genres:
+- Samples 2000 songs and outlines genre experiment
+- Uses Spotify API to pull genres for each song through artist URIs
+- Uses TF-IDF to weigh genres across the corpus
+- Reruns experiment to see outcome on predictions
 
 
 ## References
